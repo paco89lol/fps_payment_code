@@ -10,9 +10,7 @@ topics:
   - faster-payment-system
   - fps-payment-code
   - payment-code
-  - payment
   - flutter
-  - sdk
 
 environment:
   sdk: '>=3.0.1 <4.0.0'
