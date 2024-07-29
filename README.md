@@ -1,4 +1,4 @@
-#fps_payment_code
+# fps_payment_code
 
 Generate FPS payment code.
 
