@@ -114,3 +114,6 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 
 # Contact
 For any inquiries, please contact [paco89lol@gmail.com].
+
+# Others
+[Common QR Code Specification for Retail Payments in Hong Kong](https://www.hkma.gov.hk/media/eng/doc/key-functions/financial-infrastructure/infrastructure/retail-payment-initiatives/Common_QR_Code_Specification.pdf)
