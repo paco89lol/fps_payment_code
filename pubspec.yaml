@@ -1,7 +1,8 @@
 name: fps_payment_code
 description: "Payment code generator specifically for the Hong Kong Faster Payment System (FPS). This generator is designed to create codes that facilitate seamless transactions using various payment types, including phone numbers, IDs, and emails."
 version: 1.0.0
-homepage:
+author: "paco89lol@gmail.com"
+homepage: "https://github.com/paco89lol/fps_payment_code"
 repository: "https://github.com/paco89lol/fps_payment_code"
 issue_tracker:  "https://github.com/paco89lol/fps_payment_code/issues"
 topics:

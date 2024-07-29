@@ -11,7 +11,7 @@ Generate FPS payment code.
 
 ## Requirements
 
-- Flutter >=3.3.0
+- Flutter >=3.0.1
 - Dart >=2.18.0 <4.0.0
 - iOS >=12.0
 - MacOS >=10.14
@@ -71,37 +71,38 @@ print(paymentCode);
 # Parameters
 
 ## FPSCodeGenerator
-- fpsType: Type of payment identifier (phone number, ID, or email).
-- fpsId: The payment identifier (if fpsType is id).
-- phoneNumber: The user's phone number (if fpsType is phoneNumber).
-- email: The user's email address (if fpsType is email).
-- currency: The currency code (e.g., HKD).
-- amount: The transaction amount.
-- merchantName: The name of the merchant.
-- additionalData: Optional additional data for the transaction.
+- **fpsType**: Type of payment identifier (phone number, ID, or email).
+- **fpsId**: The payment identifier (if fpsType is id).
+- **phoneNumber**: The user's phone number (if fpsType is phoneNumber).
+- **email**: The user's email address (if fpsType is email).
+- **currency**: The currency code (e.g., HKD).
+- **amount**: The transaction amount.
+- **merchantName**: The name of the merchant.
+- **additionalData**: Optional additional data for the transaction.
 
 ## FPSCodeAdditionalData
-- billNumber: Up to 25 characters.
-- mobileNumber: Up to 25 characters.
-- storeLabel: Up to 25 characters.
-- loyaltyNumber: Up to 25 characters.
-- referenceLabel: Up to 25 characters.
-- customerLabel: Up to 25 characters.
-- terminalLabel: Up to 25 characters.
-- purposeOfTransaction: Up to 25 characters.
-- additionalConsumerDataRequest: Up to 25 characters.
+- **billNumber**: Up to 25 characters.
+- **mobileNumber**: Up to 25 characters.
+- **storeLabel**: Up to 25 characters.
+- **loyaltyNumber**: Up to 25 characters.
+- **referenceLabel**: Up to 25 characters.
+- **customerLabel**: Up to 25 characters.
+- **terminalLabel**: Up to 25 characters.
+- **purposeOfTransaction**: Up to 25 characters.
+- **additionalConsumerDataRequest**: Up to 25 characters.
 
 
-#FPS codes segment:
-* Transaction Types
+
+# FPS codes segment:
+* **Transaction Types**
     * Supports three types of payment identifiers: phoneNumber, id, and email, allowing flexibility in how users can receive payments.
-* Currency Support (A numeric code based on [ISO 4217])
+* **Currency Support** (A numeric code based on [ISO 4217])
     * The CurrencyCode enum includes a comprehensive list of currencies, ensuring users can specify the appropriate currency for their transactions.
-* Merchant
+* **Merchant**
     * Merchant detail includes country, city and merchant name.
-* Additional Data Handling
+* **Additional Data Handling**
     * The FPSCodeAdditionalData class allows for optional fields like bill numbers, store labels, and customer labels, enhancing transaction details while ensuring that certain fields (like bill number and reference label) cannot coexist.
-* Validation Checks(CRC based on [ISO/IEC 13239] using the polynomial '1021' (hex) and initial value 'FFFF' (hex))
+* **Validation Checks**(CRC based on [ISO/IEC 13239] using the polynomial '1021' (hex) and initial value 'FFFF' (hex))
     * The code includes validation checks to ensure that required fields are present and correctly formatted.
   
 
